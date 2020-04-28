@@ -17,7 +17,7 @@ function getData(user){
           return response.json();
         })
         .then((data) => {
-            console.log(data);
+            //console.log(data);
             setElements(data);
     
         });
@@ -34,10 +34,7 @@ function setElements(data){
     const name = data.name;
     const username = data.username;
 
-    console.log(username);
-    console.log(name);
-    console.log(rank);
-    console.log(score);
+    
     document.getElementById("fullname").innerHTML = `Username: ${username}`;
     document.getElementById("rank").innerHTML = `Rank: ${rank}`;
     document.getElementById("score").innerHTML = `Score: ${score}`;
